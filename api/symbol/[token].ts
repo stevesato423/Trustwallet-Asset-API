@@ -6,10 +6,13 @@ import request from 'request';
 
 import { allowCors } from '../../utils/allow-cors';
 
-const POLYGON_TOKENS_LISTS = [
+const TOKENS_LIST = [
+  'https://yearn.science/static/tokenlist.json',
+  'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
   'https://unpkg.com/@sushiswap/default-token-list/build/sushiswap-default.tokenlist.json',
   'https://unpkg.com/quickswap-default-token-list/build/quickswap-default.tokenlist.json',
   'https://unpkg.com/@cometh-game/default-token-list/build/comethswap-default.tokenlist.json',
+  'https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json',
 ];
 
 const bscTokensJson =
@@ -55,7 +58,7 @@ interface TrustWalletAsset {
 }
 
 async function fetchTokensLists(): Promise<Token[]> {
-  const tokens = await map(POLYGON_TOKENS_LISTS, async (url) => {
+  const tokens = await map(TOKENS_LIST, async (url) => {
     const { data } = await axios.get<{ tokens: Token[] }>(url);
     return Array.isArray(data?.tokens)
       ? data.tokens.filter((t) => t.chainId === 137)
