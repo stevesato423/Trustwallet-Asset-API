@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn vercel dev",
     "lint": "yarn eslint --ext .ts,.tsx ."
   },
   "dependencies": {
