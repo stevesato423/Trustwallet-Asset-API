@@ -28,6 +28,7 @@ const tokenRewrites: Record<string, string> = {
   BNB: 'wbnb',
   pAUTO: 'AUTO',
   dQUICK: 'QUICK',
+  CAKE: 'Cake',
 };
 
 const customImages: Record<string, string> = {
