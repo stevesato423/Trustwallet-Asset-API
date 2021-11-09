@@ -29,6 +29,7 @@ const tokenRewrites: Record<string, string> = {
   pAUTO: 'AUTO',
   dQUICK: 'QUICK',
   CAKE: 'Cake',
+  sKLIMA: 'KLIMA',
 };
 
 const customImages: Record<string, string> = {
