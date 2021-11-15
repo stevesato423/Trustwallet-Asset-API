@@ -33,6 +33,7 @@ const tokenRewrites: Record<string, string> = {
 };
 
 const customImages: Record<string, string> = {
+  PSP: 'https://assets.coingecko.com/coins/images/20403/small/ep7GqM19_400x400.jpg',
   r4Belt: 'https://s.belt.fi/info/R4BELT@2x.png',
   LAUNCH: 'https://superlauncher.io/img/coin/launch.svg',
   MRF: 'https://superlauncher.io/img/project/mrf/mrf-logo.svg',
