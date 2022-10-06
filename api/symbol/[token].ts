@@ -7,7 +7,6 @@ import request from 'request';
 import { allowCors } from '../../utils/allow-cors';
 
 const TOKENS_LIST = [
-  'https://yearn.science/static/tokenlist.json',
   'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
   'https://unpkg.com/@sushiswap/default-token-list/build/sushiswap-default.tokenlist.json',
   'https://unpkg.com/@cometh-game/default-token-list/build/comethswap-default.tokenlist.json',
