@@ -43,6 +43,7 @@ const customImages: Record<string, string> = {
     'https://raw.githubusercontent.com/trustwallet/assets/6572a691df8141f3e8213cb97ef8d2e4b86d8b86/blockchains/ethereum/assets/0x6c28AeF8977c9B773996d0e8376d2EE379446F2f/logo.png',
   OP: 'https://pbs.twimg.com/profile_images/1510410375140945927/JtpX95Rt_400x400.jpg',
   RSR: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3964.png',
+  SNX: 'https://s2.coinmarketcap.com/static/img/coins/64x64/2586.png',
 };
 
 interface Token {
